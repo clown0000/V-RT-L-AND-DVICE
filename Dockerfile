@@ -8,8 +8,7 @@ apt-get update && apt-get install -y \
     xorg \
     google-chrome-stable \
     && apt-get clean
-
-Set up VNC password
+    
 RUN echo "your_vnc_password" | x11vnc -storepasswd
 
 Expose VNC port (5900)
